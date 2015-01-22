@@ -1,12 +1,12 @@
 
 [.homesick/repos/bootstrap-castle]
-checkout = git clone 'git@github.com:bangroot/bootstrap-castle.git' 'bootstrap-castle'
+checkout = git clone 'https://github.com:bangroot/bootstrap-castle.git' 'bootstrap-castle'
 
 [.homesick/repos/vim-castle]
-checkout = git clone 'git@github.com:bangroot/vim-castle.git' 'vim-castle'
+checkout = git clone 'https://github.com:bangroot/vim-castle.git' 'vim-castle'
 
 [.homesick/repos/bash-castle]
-checkout = git clone 'git@github.com:bangroot/bash-castle.git' 'bash-castle'
+checkout = git clone 'https://github.com:bangroot/bash-castle.git' 'bash-castle'
 
 [.homesick/repos/tmux-castle]
-checkout = git clone 'git@github.com:bangroot/tmux-castle.git' 'tmux-castle'
+checkout = git clone 'https://github.com:bangroot/tmux-castle.git' 'tmux-castle'
