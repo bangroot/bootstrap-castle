@@ -24,4 +24,4 @@ curl -L -o ~/.mrconfig https://raw.github.com/bangroot/bootstrap-castle/master/h
 mr checkout
 mr initsubs
 
-homeshick link
+homeshick link --force
