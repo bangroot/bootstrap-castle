@@ -2,13 +2,15 @@
 
 
 if [ -d $HOME/.homesick/repos/homeshick ]; then
+	cd $HOME/.homesick/repos/homeshick
 	git pull $HOME/.homesick/repos/homeshick
+	cd ~
 else
 	git clone https://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
 fi
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
-if [ ~ -e $HOME/bin ]; then
+if [ ! -e $HOME/bin ]; then
 	mkdir $HOME/bin
 fi
 
