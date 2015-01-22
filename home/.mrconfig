@@ -1,16 +1,20 @@
-[.homesick/repos/bootstrap-castle]
-checkout = git clone 'https://github.com/bangroot/bootstrap-castle.git' 'bootstrap-castle'
-writable = git remote add write git@github.com:bangroot/bootstrap-castle.git
-push = git push write
+
 [.homesick/repos/vim-castle]
 checkout = git clone 'https://github.com/bangroot/vim-castle.git' 'vim-castle'
-writable = git remote add write git@github.com:bangroot/vim-castle.git
+writable = git remote add write 'git@github.com:bangroot/vim-castle.git'
 push = git push write
+
 [.homesick/repos/bash-castle]
 checkout = git clone 'https://github.com/bangroot/bash-castle.git' 'bash-castle'
-writable = git remote add write git@github.com:bangroot/bash-castle.git
 push = git push write
+writable = git remote add write 'git@github.com:bangroot/bash-castle.git'
+
+[.homesick/repos/bootstrap-castle]
+checkout = git clone 'https://github.com/bangroot/bootstrap-castle.git' 'bootstrap-castle'
+push = git push write
+writable = git remote add write 'git@github.com:bangroot/bootstrap-castle.git'
+
 [.homesick/repos/tmux-castle]
 checkout = git clone 'https://github.com/bangroot/tmux-castle.git' 'tmux-castle'
-writable = git remote add write git@github.com:bangroot/tmux-castle.git
 push = git push write
+writable = git remote add write 'git@github.com:bangroot/tmux-castle.git'
