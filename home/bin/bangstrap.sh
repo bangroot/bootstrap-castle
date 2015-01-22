@@ -25,3 +25,5 @@ mr checkout
 mr initsubs
 
 homeshick link --force
+
+. ~/.bash_profile
