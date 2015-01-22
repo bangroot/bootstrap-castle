@@ -22,4 +22,6 @@ curl -L -o ~/bin/mr https://raw.github.com/bangroot/bootstrap-castle/master/home
 chmod 755 ~/bin/mr
 curl -L -o ~/.mrconfig https://raw.github.com/bangroot/bootstrap-castle/master/home/.mrconfig
 mr checkout
+mr initsubs
 
+homeshick link
