@@ -19,12 +19,12 @@ fi
 
 echo -n "Setting up mr and checking out castles"
 export PATH=$PATH:~/bin
-if [ -e $HOME/bin/mr ]; then
+if [ -e $HOME/bin/mr ] || [ -b $HOME/bin/mr ]; then
 	rm -f $HOME/bin/mr
 fi
 curl -L -o ~/bin/mr https://raw.github.com/bangroot/bootstrap-castle/master/home/bin/mr
 chmod 755 ~/bin/mr
-if [ -e $HOME/.mrconfig ]; then
+if [ -e $HOME/.mrconfig ] || [ -b $HOME/.mrconfig ]; then
 	rm -f $HOME/.mrconfig
 fi
 curl -L -o ~/.mrconfig https://raw.github.com/bangroot/bootstrap-castle/master/home/.mrconfig
@@ -33,7 +33,7 @@ mr initsubs
 
 echo -n "Initializing homeshick"
 homeshick link --force
-if [ -e $HOME/.vim ]; then
+if [ -e $HOME/.vim ] || [ -b $HOME/.vim ]; then
 	rm -rf $HOME/.vim
 fi
 ln -s ~/.homesick/repos/vim-castle/dotvim ~/.vim
