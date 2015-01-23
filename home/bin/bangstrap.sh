@@ -18,12 +18,23 @@ if [ ! -e $HOME/bin ]; then
 fi
 
 export PATH=$PATH:~/bin
+if [ -e $HOME/bin/mr]; then
+	rm -f $HOME/bin/mr
+fi
 curl -L -o ~/bin/mr https://raw.github.com/bangroot/bootstrap-castle/master/home/bin/mr
 chmod 755 ~/bin/mr
+if [ -e $HOME/.mrconfig]; then
+	rm -f $HOME/.mrconfig
+fi
 curl -L -o ~/.mrconfig https://raw.github.com/bangroot/bootstrap-castle/master/home/.mrconfig
 mr checkout
 mr initsubs
 
 homeshick link --force
+if [ -e $HOME/.vim]; then
+	rm -rf $HOME/.vim
+fi
+ln -s ~/.homesick/repos/vim-castle/dotvim ~/.vim
+~/.vim/bundle/youcompleteme/install.sh
 
 . ~/.bash_profile
