@@ -17,6 +17,7 @@ if [ ! -e $HOME/bin ]; then
 	mkdir $HOME/bin
 fi
 
+echo -n "Setting up mr and checking out castles"
 export PATH=$PATH:~/bin
 if [ -e $HOME/bin/mr]; then
 	rm -f $HOME/bin/mr
@@ -30,6 +31,7 @@ curl -L -o ~/.mrconfig https://raw.github.com/bangroot/bootstrap-castle/master/h
 mr checkout
 mr initsubs
 
+echo -n "Initializing homeshick"
 homeshick link --force
 if [ -e $HOME/.vim]; then
 	rm -rf $HOME/.vim
@@ -38,3 +40,4 @@ ln -s ~/.homesick/repos/vim-castle/dotvim ~/.vim
 ~/.vim/bundle/youcompleteme/install.sh
 
 . ~/.bash_profile
+echo -n "Done!"
