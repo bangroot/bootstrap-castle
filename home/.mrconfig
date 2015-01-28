@@ -1,5 +1,4 @@
 [DEFAULT]
-initsubs=git submodule update --init --recursive
 
 [.homesick/repos/vim-castle]
 checkout = git clone 'https://github.com/bangroot/vim-castle.git' 'vim-castle'
@@ -20,3 +19,8 @@ writable = git remote add write 'git@github.com:bangroot/bootstrap-castle.git'
 checkout = git clone 'https://github.com/bangroot/tmux-castle.git' 'tmux-castle'
 push = git push write
 writable = git remote add write 'git@github.com:bangroot/tmux-castle.git'
+
+[.homesick/repos/ctags-castle]
+checkout = git clone 'https://github.com/bangroot/ctags-castle.git' 'ctags-castle'
+push = git push write
+writable = git remote add write 'git@github.com:bangroot/ctags-castle.git'
