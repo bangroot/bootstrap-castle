@@ -37,7 +37,6 @@ if [ -e $HOME/.vim ] || [ -b $HOME/.vim ]; then
 	rm -rf $HOME/.vim
 fi
 ln -s ~/.homesick/repos/vim-castle/dotvim ~/.vim
-~/.vim/bundle/youcompleteme/install.sh
 
 . ~/.bash_profile
 echo -n "Done!"
